@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+.body{
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sprite{
+  width: 50px;
+  height: 72px;
+  animation: moveX 1s steps(10) infinite;
+  background-image: url(./assets/spritetest.png);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes moveX{
+  from{background-position-x: 0px;}
+  to{background-position-x: -500px;}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer{
+  position: fixed;
+  bottom: 0;
+}
+ul{
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-around;
 }
